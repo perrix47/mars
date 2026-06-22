@@ -1,0 +1,12 @@
+<svg width="260" height="120" viewBox="0 0 260 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logo M.A.R SILVA</title>
+  <desc id="desc">Logo tipografico con M.A.R arriba y SILVA abajo.</desc>
+  <rect width="260" height="120" rx="10" fill="#101010"/>
+  <path d="M30 88V32H47.5L65.5 63.5L83.5 32H101V88H85.5V56.8L70.2 83H60.8L45.5 56.8V88H30Z" fill="#F4F1EA"/>
+  <path d="M113 88L135.2 32H153.8L176 88H159.2L155.4 77.6H133.2L129.4 88H113ZM137.6 64.8H151L144.3 46.2L137.6 64.8Z" fill="#F4F1EA"/>
+  <path d="M186 88V32H212.8C219.2 32 224.3 33.6 228.1 36.8C232 40 233.9 44.5 233.9 50.3C233.9 54 233 57.2 231.1 59.9C229.3 62.6 226.7 64.7 223.4 66.1L236 88H218.5L208 68.9H202.2V88H186ZM202.2 56.6H211.6C213.6 56.6 215.2 56.1 216.3 55C217.5 53.9 218.1 52.4 218.1 50.5C218.1 48.6 217.5 47.1 216.3 46C215.2 44.9 213.6 44.4 211.6 44.4H202.2V56.6Z" fill="#F4F1EA"/>
+  <circle cx="109" cy="82" r="4" fill="#D8B66D"/>
+  <circle cx="180" cy="82" r="4" fill="#D8B66D"/>
+  <path d="M73 103H187" stroke="#D8B66D" stroke-width="2"/>
+  <text x="130" y="111" text-anchor="middle" fill="#D8B66D" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="7">SILVA</text>
+</svg>
