@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M.A.R.SILVA | Aplicaciones web a medida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="M.A.R.SILVA inicio">
+      <img class="brand-logo" src="logo-marsilva.svg" alt="M.A.R SILVA">
+    </a>
+    <nav class="desktop-nav" aria-label="Navegacion principal">
+      <a href="#catalogo">Catalogo</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#planes">Planes</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="themeToggle" type="button" aria-label="Cambiar tema" title="Cambiar tema">
+        <span aria-hidden="true">☼</span>
+      </button>
+      <button class="menu-button" id="menuButton" type="button" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Menu movil">
+    <a href="#catalogo">Catalogo</a>
+    <a href="#proceso">Proceso</a>
+    <a href="#planes">Planes</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">Diseño, desarrollo y lanzamiento</p>
+        <h1>Aplicaciones web que venden, automatizan y crecen contigo.</h1>
+        <p class="hero-copy">Creamos tiendas, sistemas de reservas, paneles internos y plataformas SaaS con interfaces rapidas, modernas y faciles de administrar.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#catalogo">Ver soluciones</a>
+          <a class="secondary-button" href="#contacto">Pedir propuesta</a>
+        </div>
+        <dl class="hero-stats" aria-label="Indicadores de servicio">
+          <div>
+            <dt>21 dias</dt>
+            <dd>primer lanzamiento</dd>
+          </div>
+          <div>
+            <dt>98%</dt>
+            <dd>sitios optimizados</dd>
+          </div>
+          <div>
+            <dt>24/7</dt>
+            <dd>monitoreo opcional</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-visual" aria-label="Equipo revisando una aplicacion web">
+        <figure class="hero-photo-card">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=85" alt="Equipo profesional trabajando en una aplicacion web">
+          <figcaption>
+            <span>Proyecto reciente</span>
+            <strong>Panel comercial con ventas, clientes y reportes en tiempo real.</strong>
+          </figcaption>
+        </figure>
+        <div class="floating-metric" aria-label="Indicador de crecimiento">
+          <span>+38%</span>
+          <p>conversion despues del rediseño</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="trusted-band" aria-label="Beneficios destacados">
+      <span>Codigo limpio</span>
+      <span>Diseno responsive</span>
+      <span>Pagos integrados</span>
+      <span>Panel administrativo</span>
+      <span>SEO tecnico</span>
+    </section>
+
+    <section class="section" id="catalogo">
+      <div class="section-heading">
+        <p class="eyebrow">Catalogo</p>
+        <h2>Elige una base y la adaptamos a tu negocio.</h2>
+        <p>Soluciones listas para acelerar ventas, operaciones y atencion al cliente.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filtrar aplicaciones">
+        <button class="filter-button active" type="button" data-filter="all">Todas</button>
+        <button class="filter-button" type="button" data-filter="ventas">Ventas</button>
+        <button class="filter-button" type="button" data-filter="gestion">Gestion</button>
+        <button class="filter-button" type="button" data-filter="servicios">Servicios</button>
+      </div>
+
+      <div class="app-grid" id="appGrid">
+        <article class="app-card" data-category="ventas">
+          <figure class="app-art">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80" alt="Persona usando una tienda online en un computador">
+          </figure>
+          <div class="app-body">
+            <p class="tag">Ventas</p>
+            <h3>Tienda online premium</h3>
+            <p>Catalogo, carrito, pagos, cupones, despacho y panel de productos.</p>
+            <div class="card-footer">
+              <div class="price-line">
+                <span class="old-price">US$ 890</span>
+                <strong>Desde US$ 534</strong>
+                <span class="discount-pill">40% dscto.</span>
+              </div>
+              <button type="button" class="small-button" data-product="Tienda online premium">Cotizar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="app-card" data-category="servicios">
+          <figure class="app-art">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Pantalla de agenda y reservas en un portatil">
+          </figure>
+          <div class="app-body">
+            <p class="tag">Servicios</p>
+            <h3>Sistema de reservas</h3>
+            <p>Agenda, disponibilidad, pagos de senal, recordatorios y clientes.</p>
+            <div class="card-footer">
+              <div class="price-line">
+                <span class="old-price">US$ 720</span>
+                <strong>Desde US$ 432</strong>
+                <span class="discount-pill">40% dscto.</span>
+              </div>
+              <button type="button" class="small-button" data-product="Sistema de reservas">Cotizar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="app-card" data-category="gestion">
+          <figure class="app-art">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80" alt="Equipo revisando informacion comercial en una reunion">
+          </figure>
+          <div class="app-body">
+            <p class="tag">Gestion</p>
+            <h3>CRM comercial</h3>
+            <p>Embudo de ventas, contactos, tareas, reportes y automatizaciones.</p>
+            <div class="card-footer">
+              <div class="price-line">
+                <span class="old-price">US$ 1.150</span>
+                <strong>Desde US$ 690</strong>
+                <span class="discount-pill">40% dscto.</span>
+              </div>
+              <button type="button" class="small-button" data-product="CRM comercial">Cotizar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="app-card" data-category="gestion">
+          <figure class="app-art">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80" alt="Dashboard de metricas en pantalla de computador">
+          </figure>
+          <div class="app-body">
+            <p class="tag">Gestion</p>
+            <h3>Dashboard operativo</h3>
+            <p>Metricas en tiempo real, reportes descargables y roles de usuario.</p>
+            <div class="card-footer">
+              <div class="price-line">
+                <span class="old-price">US$ 980</span>
+                <strong>Desde US$ 588</strong>
+                <span class="discount-pill">40% dscto.</span>
+              </div>
+              <button type="button" class="small-button" data-product="Dashboard operativo">Cotizar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="app-card" data-category="ventas">
+          <figure class="app-art">
+            <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=900&q=80" alt="Fundadores trabajando en un producto digital">
+          </figure>
+          <div class="app-body">
+            <p class="tag">Ventas</p>
+            <h3>MVP SaaS</h3>
+            <p>Login, suscripciones, area privada, facturacion y analitica inicial.</p>
+            <div class="card-footer">
+              <div class="price-line">
+                <span class="old-price">US$ 1.600</span>
+                <strong>Desde US$ 960</strong>
+                <span class="discount-pill">40% dscto.</span>
+              </div>
+              <button type="button" class="small-button" data-product="MVP SaaS">Cotizar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="app-card" data-category="servicios">
+          <figure class="app-art">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=900&q=80" alt="Atencion profesional a clientes usando tecnologia">
+          </figure>
+          <div class="app-body">
+            <p class="tag">Servicios</p>
+            <h3>Portal de clientes</h3>
+            <p>Tickets, documentos, pagos, historial y seguimiento de solicitudes.</p>
+            <div class="card-footer">
+              <div class="price-line">
+                <span class="old-price">US$ 840</span>
+                <strong>Desde US$ 504</strong>
+                <span class="discount-pill">40% dscto.</span>
+              </div>
+              <button type="button" class="small-button" data-product="Portal de clientes">Cotizar</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section" id="proceso">
+      <div>
+        <p class="eyebrow">Proceso</p>
+        <h2>Un camino claro desde la idea hasta el lanzamiento.</h2>
+        <p>Trabajamos con entregas semanales para que puedas probar, ajustar y vender antes.</p>
+      </div>
+      <ol class="process-list">
+        <li>
+          <span>01</span>
+          <div>
+            <h3>Mapa del producto</h3>
+            <p>Definimos objetivos, usuarios, funciones y prioridad de lanzamiento.</p>
+          </div>
+        </li>
+        <li>
+          <span>02</span>
+          <div>
+            <h3>Diseno interactivo</h3>
+            <p>Prototipo responsive para validar pantallas, flujos y contenido.</p>
+          </div>
+        </li>
+        <li>
+          <span>03</span>
+          <div>
+            <h3>Desarrollo y pruebas</h3>
+            <p>Construccion, integraciones, optimizacion, seguridad y QA funcional.</p>
+          </div>
+        </li>
+        <li>
+          <span>04</span>
+          <div>
+            <h3>Lanzamiento</h3>
+            <p>Publicacion, capacitacion y soporte para la primera etapa de uso.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="quote-band" aria-label="Cotizador rapido">
+      <div>
+        <p class="eyebrow">Cotizador rapido</p>
+        <h2>Calcula una estimacion inicial.</h2>
+      </div>
+      <form class="calculator" id="calculator">
+        <label>
+          Tipo de app
+          <select id="appType">
+            <option value="432">Reservas o portal</option>
+            <option value="534">Tienda online</option>
+            <option value="690">CRM o dashboard</option>
+            <option value="960">MVP SaaS</option>
+          </select>
+        </label>
+        <label>
+          Funciones extra
+          <input id="features" type="range" min="0" max="6" value="2">
+          <span id="featureCount">2 extras</span>
+        </label>
+        <label>
+          Urgencia
+          <select id="speed">
+            <option value="1">Normal</option>
+            <option value="1.18">Express</option>
+          </select>
+        </label>
+        <output id="estimate">US$ 612</output>
+      </form>
+    </section>
+
+    <section class="section" id="planes">
+      <div class="section-heading">
+        <p class="eyebrow">Planes</p>
+        <h2>Paquetes simples para empezar bien.</h2>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <h3>Starter</h3>
+          <p>Para validar una idea o lanzar una presencia comercial.</p>
+          <div class="plan-price">
+            <span class="old-price">US$ 490+</span>
+            <strong>US$ 294+</strong>
+            <span class="discount-pill">40% dscto.</span>
+          </div>
+          <ul>
+            <li>Hasta 5 pantallas</li>
+            <li>Formulario conectado</li>
+            <li>Diseno responsive</li>
+          </ul>
+          <a class="secondary-button" href="#contacto">Solicitar</a>
+        </article>
+        <article class="price-card featured">
+          <span class="badge">Mas elegido</span>
+          <h3>Business</h3>
+          <p>Para vender, administrar clientes y operar con herramientas propias.</p>
+          <div class="plan-price">
+            <span class="old-price">US$ 890+</span>
+            <strong>US$ 534+</strong>
+            <span class="discount-pill">40% dscto.</span>
+          </div>
+          <ul>
+            <li>Panel administrativo</li>
+            <li>Pagos o reservas</li>
+            <li>Capacitacion incluida</li>
+          </ul>
+          <a class="primary-button" href="#contacto">Empezar</a>
+        </article>
+        <article class="price-card">
+          <h3>Scale</h3>
+          <p>Para productos SaaS, integraciones y flujos operativos avanzados.</p>
+          <div class="plan-price">
+            <span class="old-price">US$ 1.600+</span>
+            <strong>US$ 960+</strong>
+            <span class="discount-pill">40% dscto.</span>
+          </div>
+          <ul>
+            <li>Arquitectura escalable</li>
+            <li>Roles y permisos</li>
+            <li>Soporte de lanzamiento</li>
+          </ul>
+          <a class="secondary-button" href="#contacto">Conversar</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div>
+        <p class="eyebrow">Contacto</p>
+        <h2>Cuéntanos que quieres vender o automatizar.</h2>
+        <p>Te responderemos con una propuesta clara, tiempos estimados y el mejor punto de partida.</p>
+      </div>
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/mjgqvbvr" method="POST">
+        <input type="hidden" name="_subject" value="Nueva solicitud desde M.A.R.SILVA">
+        <label>
+          Nombre
+          <input type="text" name="name" placeholder="Tu nombre" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="tu@email.com" required>
+        </label>
+        <label>
+          Proyecto
+          <select name="project" id="projectSelect">
+            <option>Tienda online premium</option>
+            <option>Sistema de reservas</option>
+            <option>CRM comercial</option>
+            <option>Dashboard operativo</option>
+            <option>MVP SaaS</option>
+            <option>Portal de clientes</option>
+          </select>
+        </label>
+        <label>
+          Mensaje
+          <textarea name="message" rows="4" placeholder="Cuentanos tus objetivos"></textarea>
+        </label>
+        <button class="primary-button" type="submit">Enviar solicitud</button>
+        <div class="form-divider"><span>o</span></div>
+        <a class="whatsapp-button" href="https://api.whatsapp.com/send?phone=56935108885&text=Hola,%20quiero%20cotizar%20una%20aplicacion%20web" target="_blank" rel="noopener">
+          Agregar a WhatsApp
+        </a>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>M.A.R.SILVA</span>
+    <p>Aplicaciones web modernas para negocios que quieren moverse rapido.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
